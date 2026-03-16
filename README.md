@@ -128,8 +128,6 @@ Security alerts are generated when events match detection rules.
 
 ## Screenshots
 
-## Screenshots
-
 ### File Integrity Monitoring 
 ![File Integrity Monitoring](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/33fd1b517a655921d35a08bc58fc9cfbd8263f64/File%20Integrity%20monitoring%20alert.png)
 
