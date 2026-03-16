@@ -1,4 +1,3 @@
-# Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-
 # Wazuh SIEM Security Monitoring Lab
 
 ## Overview
