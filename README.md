@@ -39,7 +39,7 @@ Responsible for collecting logs, analyzing events, applying detection rules and 
 Wazuh Agent (Windows) 
 Instlled on endpoints to forward logs and telementry data to the Wazuh server. 
 
-Wezuh Dashboard 
+Wazuh Dashboard 
 Web-based interface used to visualize alerts, investigate security events, and monitor endpoints 
 
 
