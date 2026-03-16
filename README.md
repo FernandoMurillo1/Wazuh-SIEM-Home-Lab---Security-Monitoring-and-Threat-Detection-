@@ -137,7 +137,7 @@ Security alerts are generated when events match detection rules.
 ![Agent Connected](screenshots/agent-connected.png)
 
 ### Failed Login Alert
-![Failed Login](screenshots/failed-login-alert.png)
+![Failed Login](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/1f3ec10bfb150e3155a1beda9d2d41afb9c7f0d2/authentication%20failure.png)
 
 ### PowerShell Alert
 ![PowerShell Alert](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/6914d28424a9f379af0a3f27a55b75b2545946bb/Powershell%20Alert%20User%20created.png)
