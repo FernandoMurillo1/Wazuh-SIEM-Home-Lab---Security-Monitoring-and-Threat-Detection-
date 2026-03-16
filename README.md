@@ -140,7 +140,7 @@ Security alerts are generated when events match detection rules.
 ![Failed Login](screenshots/failed-login-alert.png)
 
 ### PowerShell Alert
-![PowerShell Alert](screenshots/powershell-alert.png)
+![PowerShell Alert](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/6914d28424a9f379af0a3f27a55b75b2545946bb/Powershell%20Alert%20User%20created.png)
 ---
 
 ## Skills Demonstrated
