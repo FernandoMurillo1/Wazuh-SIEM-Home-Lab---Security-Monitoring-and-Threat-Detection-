@@ -128,18 +128,19 @@ Security alerts are generated when events match detection rules.
 
 ## Screenshots
 
+## Screenshots
+
 ### Wazuh Dashboard
-(screenshot)
+![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
 
-### Endpoint Agent Connection
-(screenshot)
+### Endpoint Agent Connected
+![Agent Connected](screenshots/agent-connected.png)
 
-### Security Alerts
-(screenshot)
+### Failed Login Alert
+![Failed Login](screenshots/failed-login-alert.png)
 
-### Threat Hunting Interface
-(screenshot)
-
+### PowerShell Alert
+![PowerShell Alert](screenshots/powershell-alert.png)
 ---
 
 ## Skills Demonstrated
