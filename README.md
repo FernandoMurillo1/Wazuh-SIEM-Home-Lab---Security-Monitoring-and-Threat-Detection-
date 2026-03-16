@@ -133,8 +133,8 @@ Security alerts are generated when events match detection rules.
 ### Wazuh Dashboard
 ![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
 
-### Endpoint Agent Connected
-![Agent Connected](screenshots/agent-connected.png)
+### Malware Detection on Dashboard
+![Malware Detection on Dashboard](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/09e2d5325beb6cacbcb82374b14379d403760fbe/%20malware%20detection%20on%20the%20Dashboard%20of%20Wazuh.png)
 
 ### Failed Login Alert
 ![Failed Login](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/1f3ec10bfb150e3155a1beda9d2d41afb9c7f0d2/authentication%20failure.png)
