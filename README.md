@@ -115,7 +115,7 @@ Example command:
 
 powershell -ExecutionPolicy Bypass -Command "Get-Process" 
 
-THis behavior mimics techniques used in real attacks where malicious scripts bypass security policies to execute commands. 
+This behavior mimics techniques used in real attacks where malicious scripts bypass security policies to execute commands. 
 
 Wazuh analyzes these logs and can detect: 
 - Suspicous PowerShell execution
