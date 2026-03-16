@@ -1,179 +1,180 @@
 # Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-
+# Wazuh SIEM Security Monitoring Lab
 
-Overview 
+## Overview
 
-This project demonstrates the deployment and configuration of a Security Information and Event Management (SIEM) platform using Wazuh. This lab simulates a real-world security operations environment where system logs, endpoint telemntry and security events are collected, analyzed, and visualized to detect potential threats. 
+This project demonstrates the deployment and configuration of a Security Information and Event Management (SIEM) platform using Wazuh. The lab simulates a Security Operations Center (SOC) environment where endpoint activity and system logs are monitored to detect potential security threats.
 
-The goal of this project was to gain hands-on experience with: 
-- SIEM deployment and configuration
-- Enpoint Monitoring
-- Log ingestion and analysis
-- Threat detection and investigation
-- Security event correlation
+The objective of this project was to gain hands-on experience with:
 
-This lab replicates a simplifies Security Operations Center (SOC) workflow where alerts are generated, investigated and documented. 
+- SIEM deployment
+- Endpoint monitoring
+- Log analysis
+- Threat detection
+- Security alert investigation
 
-Lab Architecture 
+---
 
-The environment was built using virtual machines to simulate an enterprise network 
+## Lab Architecture
 
-Host Machine (Mac / Parallels)
+The environment was built using virtual machines to simulate a small enterprise network.
 
+Mac Host
+│
 ├── Ubuntu Server
 │   └── Wazuh SIEM
 │        • Wazuh Manager
 │        • Wazuh Indexer
 │        • Wazuh Dashboard
+│
+└── Windows Endpoint
+    └── Wazuh Agent
+        • Windows Event Logs
+        • PowerShell Monitoring
+        • File Integrity Monitoring
 
-├── Windows Endpoint
-│   └── Wazuh Agent
-│        • Windows Security Logs
-│        • PowerShell Monitoring
-│        • File Integrity Monitoring
+---
 
-Components 
-
-Wazuh Server (Ubuntu) 
-Responsible for collecting logs, analyzing events, applying detection rules and sending alerts to the dashboard 
-
-Wazuh Agent (Windows) 
-Instlled on endpoints to forward logs and telementry data to the Wazuh server. 
-
-Wazuh Dashboard 
-Web-based interface used to visualize alerts, investigate security events, and monitor endpoints 
-
-
-Technologies Used 
+## Technologies Used
 
 - Wazuh SIEM
-- Linux (Ubuntu Server)
+- Ubuntu Linux
 - Windows Endpoint Monitoring
-- Powershell
-- Virtualization (Parellels / VM environment)
+- PowerShell
+- Virtualization (Parallels / VM Environment)
 - Syslog
 - Windows Event Logs
 
-Features impemented 
+---
 
-Endpoint Monitoring 
+## Deployment Process
 
-The Wazuh agents was installed on a Windows machine to collect system logs and send them to the Wazuh server. 
+The SIEM lab was deployed using an Ubuntu server as the Wazuh manager.
 
-Data collected includes: 
+Steps included:
 
-- Windows authentication events
-- PowerShell activity
-- System changes
-- File modification
-- Network port changes
+1. Installing Wazuh manager, indexer, and dashboard
+2. Configuring networking between virtual machines
+3. Installing the Wazuh agent on the Windows endpoint
+4. Registering the agent with the Wazuh server
+5. Verifying log ingestion in the Wazuh dashboard
 
-File Integrity Monitoring 
+---
 
-Wazu monitored file system changes on the host machine and generated alerts when files were created or modified. 
+## Detection Scenarios
 
-Example detection: 
+Several security scenarios were simulated to test SIEM detection capabilities.
 
-Rule: File added to the system 
-Rule ID: 554 
-Severity Level: 5 
+### Authentication Failure Detection
 
-This demonstrates Wazuh's ability to dectect unauthorized file changes which may indicate malware activity or persistence mechanisms. 
+Failed login attempts were generated on the Windows endpoint.
 
+Example event:
 
-Network Monitoring 
+Event ID: 4625  
+Description: Failed login attempt
 
-The SIEM monitored changes to listening network ports using netstat. 
+These alerts can indicate:
 
-Example alert: 
-
-Rule: Listened ports status changed 
-Rule ID: 533 
-Severity Level: 7
-
-This detection can help identify suspicious services or unauthorized processes opening network ports. 
-
-
-Authentication Monitoring 
-
-The Lab simulated failed login attempts on a Windows machine 
-
-Example detection: 
-
-Event ID: 4625 
-Description: Failed login attempt 
-
-These events are commonly used to detect: 
-- Brute force attacks
+- brute force attacks
 - credential stuffing
-- unauthoritzed access attempts
+- unauthorized access attempts
 
-PowerShell Attack Simulation 
+---
 
-A suspicious PowerShell command was executed to simulate fileless malware behavior. 
+### PowerShell Monitoring
 
-Example command: 
+Suspicious PowerShell commands were executed to simulate fileless malware activity.
 
-powershell -ExecutionPolicy Bypass -Command "Get-Process" 
+Example command:
 
-This behavior mimics techniques used in real attacks where malicious scripts bypass security policies to execute commands. 
+powershell -ExecutionPolicy Bypass -Command "Get-Process"
 
-Wazuh analyzes these logs and can detect: 
-- Suspicous PowerShell execution
-- Policy bypass attempts
-- Malicious scripting activity
+Wazuh analyzes these events and generates alerts when suspicious command execution is detected.
 
-Detection Workflow 
+---
 
-The SIEM pipeline processes events in the following order: 
+### File Integrity Monitoring
 
-Endpoint Activity
-        ↓
-Wazuh Agent
-        ↓
-Wazuh Manager
-        ↓
-Wazuh Indexer
-        ↓
+Wazuh was configured to detect file system changes.
+
+Example alert:
+
+Rule: File added to the system  
+Rule ID: 554  
+Severity Level: 5
+
+This helps identify unauthorized file changes or malware installation.
+
+---
+
+## Detection Workflow
+
+The SIEM processes security events through the following pipeline:
+
+Endpoint Activity  
+↓  
+Wazuh Agent  
+↓  
+Wazuh Manager  
+↓  
+Wazuh Indexer  
+↓  
 Wazuh Dashboard
 
-Security alerts are generated when log events match predefined detection rules. 
+Security alerts are generated when events match detection rules.
 
-Example Security Alerts 
+---
 
-Examples of alerts generated in the lab environment include: 
+## Screenshots
 
-Alert Type                           Description 
-File Integrity Monitoring            File Created or modified 
-Network Monitoring                   New listening port detected 
-Authentication Failure               Failed login attempt 
-PowerShell Activity                  Suspicious PowerShell command 
+### Wazuh Dashboard
+(screenshot)
 
-These alerts are analyzed through the Wazuh dashboard for investigation 
+### Endpoint Agent Connection
+(screenshot)
 
-Skills Demonstrated 
+### Security Alerts
+(screenshot)
 
-This project demonstrates hands-on experience with: 
+### Threat Hunting Interface
+(screenshot)
 
-- SIEM deployment 
+---
+
+## Skills Demonstrated
+
+This project demonstrates hands-on experience with:
+
+- SIEM deployment
 - Endpoint security monitoring
-- Security event analysis
-- Threat detection techniques
-- Log management
-- Security incident investigation
+- Log analysis
+- Security event correlation
+- Threat detection
+- SOC alert investigation
+- Linux system administration
+- Windows event log analysis
 
-Future Improvements 
+## Future Improvements
 
-Planned enhancements to this lab included: 
+Planned improvements for this lab include:
 
-- Active Directory attack detection
-- Malware detection monitoring
+- Active Directory attack monitoring
+- Malware detection alerts
 - Brute force attack simulation
-- Network scanning detection
-- Integration with threat intelligence feeds
+- Threat intelligence integration
+
+## Author
+
+Luis Fernando Murillo  
+Cybersecurity / IT Enthusiast  
+
+LinkedIn: https://www.linkedin.com/in/luis-murillo-748474217/
 
 Conclusion 
 
 This project provided hands-on experience deploying and operating and SIEM platform to monitor system activity and detect security threats. By simulating real-worl attack scenarious and analyzing the resulting alerts, this lab demostrates practical skills relevant to roles in: 
+
 - Security Operations (SOC)
 - Cybersecurity Analysis
 - Incident Response
