@@ -171,7 +171,7 @@ LinkedIn: https://www.linkedin.com/in/luis-murillo-748474217/
 
 Conclusion 
 
-This project provided hands-on experience deploying and operating and SIEM platform to monitor system activity and detect security threats. By simulating real-worl attack scenarious and analyzing the resulting alerts, this lab demostrates practical skills relevant to roles in: 
+This project provided hands-on experience deploying and operating and SIEM platform to monitor system activity and detect security threats. By simulating real-world attack scenarious and analyzing the resulting alerts, this lab demostrates practical skills relevant to roles in: 
 
 - Security Operations (SOC)
 - Cybersecurity Analysis
