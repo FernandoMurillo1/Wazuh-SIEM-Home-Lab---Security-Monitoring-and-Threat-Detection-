@@ -137,7 +137,9 @@ Security alerts are generated when events match detection rules.
 ![Failed Login](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/1f3ec10bfb150e3155a1beda9d2d41afb9c7f0d2/authentication%20failure.png)
 
 ### PowerShell Alert
+
 ![PowerShell Alert](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/6914d28424a9f379af0a3f27a55b75b2545946bb/Powershell%20Alert%20User%20created.png)
+
 ---
 
 ## Skills Demonstrated
@@ -164,20 +166,21 @@ Planned improvements for this lab include:
 
 ## Author
 
-Luis Fernando Murillo  
-Cybersecurity / IT Enthusiast  
+---
 
-LinkedIn: https://www.linkedin.com/in/luis-murillo-748474217/
+## Skills Demonstrated
+- Wazuh SIEM deployment and agent configuration on Ubuntu and Windows
+- Windows Security Event Log analysis (Event IDs 4624, 4625, 4732)
+- PowerShell script block logging and fileless malware detection
+- File Integrity Monitoring (FIM) rule configuration
+- Alert triage and security incident documentation
+- Linux server administration and VM network configuration
 
-Conclusion 
+---
 
-This project provided hands-on experience deploying and operating and SIEM platform to monitor system activity and detect security threats. By simulating real-world attack scenarious and analyzing the resulting alerts, this lab demostrates practical skills relevant to roles in: 
-
-- Security Operations (SOC)
-- Cybersecurity Analysis
-- Incident Response
-- Threat Detection
-
-
-
+## Author
+**Luis Fernando Murillo**  
+CompTIA Security+ | CySA+ | Network+ | A+  
+[LinkedIn](https://www.linkedin.com/in/luis-murillo1) · 
+[GitHub](https://github.com/FernandoMurillo1)
   
