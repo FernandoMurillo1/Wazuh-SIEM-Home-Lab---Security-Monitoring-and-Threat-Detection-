@@ -1,8 +1,17 @@
-# Wazuh SIEM Security Monitoring Lab
+# Wazuh SIEM Home Lab — Security Monitoring & Threat Detection
 
 ## Overview
+Deployed a fully functional Security Information and Event Management (SIEM) 
+platform using Wazuh to simulate a SOC monitoring environment. The lab monitors 
+a Windows endpoint for real-world attack patterns including brute force attempts, 
+fileless malware execution, and unauthorized file system changes.
 
-This project demonstrates the deployment and configuration of a Security Information and Event Management (SIEM) platform using Wazuh. The lab simulates a Security Operations Center (SOC) environment where endpoint activity and system logs are monitored to detect potential security threats.
+** Tools Used:** Wazuh SIEM · Ubuntu Server · Windows 10 · PowerShell · 
+VirtualBox/Parallels · Syslog · Windows Event Logs
+
+---
+
+## Lab Architecture
 
 The objective of this project was to gain hands-on experience with:
 
@@ -34,17 +43,6 @@ Mac Host
 
 ---
 
-## Technologies Used
-
-- Wazuh SIEM
-- Ubuntu Linux
-- Windows Endpoint Monitoring
-- PowerShell
-- Virtualization (Parallels / VM Environment)
-- Syslog
-- Windows Event Logs
-
----
 
 ## Deployment Process
 
