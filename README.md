@@ -6,7 +6,7 @@ platform using Wazuh to simulate a SOC monitoring environment. The lab monitors
 a Windows endpoint for real-world attack patterns including brute force attempts, 
 fileless malware execution, and unauthorized file system changes.
 
-** Tools Used:** Wazuh SIEM · Ubuntu Server · Windows 10 · PowerShell · 
+**Tools Used:** Wazuh SIEM · Ubuntu Server · Windows 10 · PowerShell · 
 VirtualBox/Parallels · Syslog · Windows Event Logs
 
 ---
@@ -109,7 +109,6 @@ Simulated malware activity and observed detection on the Wazuh dashboard.
 
 ## Detection Pipeline
 
-## Detection Workflow
 
 The SIEM processes security events through the following pipeline:
 
@@ -139,15 +138,6 @@ This project demonstrates hands-on experience with:
 - SOC alert investigation
 - Linux system administration
 - Windows event log analysis
-
-## Future Improvements
-
-Planned improvements for this lab include:
-
-- Active Directory attack monitoring
-- Malware detection alerts
-- Brute force attack simulation
-- Threat intelligence integration
 
 ---
 
