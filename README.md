@@ -83,9 +83,8 @@ powershell -ExecutionPolicy Bypass -Command "Get-Process"
 generated an alert. A second alert fired when a new user account was created 
 via PowerShell, simulating privilege escalation activity.
 
-![PowerShell Alert](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/6914d28424a9f379af0a3f27a55b75b2545946bb/Powershell%20Alert%20User%20created.png)
-![PowerShell User Created Alert](Powershell%20Alert%20User%20created.png)
-![PowerShell in Windows](Powershell%20in%20windows.png)
+![PowerShell Alert](Powershell%20Alert%20User%20created.png)
+
 
 ---
 
