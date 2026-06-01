@@ -31,7 +31,6 @@ Mac Host
 
 ---
 
-
 ## Deployment Process
 
 The SIEM lab was deployed using an Ubuntu server as the Wazuh manager.
