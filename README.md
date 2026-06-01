@@ -62,50 +62,55 @@ Steps included:
 
 ## Detection Scenarios
 
-Several security scenarios were simulated to test SIEM detection capabilities.
+### 1. Authentication Failure Detection (Event ID 4625)
+Simulated repeated failed login attempts to trigger brute force detection rules.
 
-### Authentication Failure Detection
+**What Wazuh detected:** Multiple Event ID 4625 failures from the same source,
+triggering a high-severity alert indicating a potential brute force or 
+credential stuffing attack.
 
-Failed login attempts were generated on the Windows endpoint.
-
-Example event:
-
-Event ID: 4625  
-Description: Failed login attempt
-
-These alerts can indicate:
-
-- brute force attacks
-- credential stuffing
-- unauthorized access attempts
+![File Integrity Monitoring](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/33fd1b517a655921d35a08bc58fc9cfbd8263f64/File%20Integrity%20monitoring%20alert.png)
 
 ---
 
-### PowerShell Monitoring
+### 2. PowerShell Execution Monitoring
+Executed suspicious PowerShell commands to simulate fileless malware behavior.
 
-Suspicious PowerShell commands were executed to simulate fileless malware activity.
-
-Example command:
-
+**Command used:**
+```powershell
 powershell -ExecutionPolicy Bypass -Command "Get-Process"
+```
 
-Wazuh analyzes these events and generates alerts when suspicious command execution is detected.
+**What Wazuh detected:** Script block logging captured the execution and 
+generated an alert. A second alert fired when a new user account was created 
+via PowerShell, simulating privilege escalation activity.
+
+![PowerShell Alert](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/6914d28424a9f379af0a3f27a55b75b2545946bb/Powershell%20Alert%20User%20created.png)
+![PowerShell User Created Alert](Powershell%20Alert%20User%20created.png)
+![PowerShell in Windows](Powershell%20in%20windows.png)
+
+---
+
+### 3. File Integrity Monitoring (FIM)
+Configured Wazuh FIM to monitor critical system directories for unauthorized 
+file changes.
+
+**What Wazuh detected:** Rule 554 triggered when a new file was added to a 
+monitored directory, simulating malware installation or unauthorized data staging.
+
+![File Integrity Monitoring](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/33fd1b517a655921d35a08bc58fc9cfbd8263f64/File%20Integrity%20monitoring%20alert.png)
 
 ---
 
-### File Integrity Monitoring
+### 4. Malware Detection
+Simulated malware activity and observed detection on the Wazuh dashboard.
 
-Wazuh was configured to detect file system changes.
+![Malware Detection on Dashboard](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/09e2d5325beb6cacbcb82374b14379d403760fbe/%20malware%20detection%20on%20the%20Dashboard%20of%20Wazuh.png)
 
-Example alert:
-
-Rule: File added to the system  
-Rule ID: 554  
-Severity Level: 5
-
-This helps identify unauthorized file changes or malware installation.
 
 ---
+
+## Detection Pipeline
 
 ## Detection Workflow
 
@@ -122,23 +127,6 @@ Wazuh Indexer
 Wazuh Dashboard
 
 Security alerts are generated when events match detection rules.
-
----
-
-## Screenshots
-
-### File Integrity Monitoring 
-![File Integrity Monitoring](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/33fd1b517a655921d35a08bc58fc9cfbd8263f64/File%20Integrity%20monitoring%20alert.png)
-
-### Malware Detection on Dashboard
-![Malware Detection on Dashboard](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/09e2d5325beb6cacbcb82374b14379d403760fbe/%20malware%20detection%20on%20the%20Dashboard%20of%20Wazuh.png)
-
-### Failed Login Alert
-![Failed Login](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/1f3ec10bfb150e3155a1beda9d2d41afb9c7f0d2/authentication%20failure.png)
-
-### PowerShell Alert
-
-![PowerShell Alert](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/6914d28424a9f379af0a3f27a55b75b2545946bb/Powershell%20Alert%20User%20created.png)
 
 ---
 
@@ -164,8 +152,6 @@ Planned improvements for this lab include:
 - Brute force attack simulation
 - Threat intelligence integration
 
-## Author
-
 ---
 
 ## Skills Demonstrated
@@ -183,4 +169,5 @@ Planned improvements for this lab include:
 CompTIA Security+ | CySA+ | Network+ | A+  
 [LinkedIn](https://www.linkedin.com/in/luis-murillo1) · 
 [GitHub](https://github.com/FernandoMurillo1)
+
   
