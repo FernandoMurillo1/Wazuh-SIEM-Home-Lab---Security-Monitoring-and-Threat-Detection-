@@ -67,7 +67,7 @@ Simulated repeated failed login attempts to trigger brute force detection rules.
 triggering a high-severity alert indicating a potential brute force or 
 credential stuffing attack.
 
-![File Integrity Monitoring](https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/33fd1b517a655921d35a08bc58fc9cfbd8263f64/File%20Integrity%20monitoring%20alert.png)
+![File Integrity Monitoring]https://github.com/FernandoMurillo1/Wazuh-SIEM-Home-Lab---Security-Monitoring-and-Threat-Detection-/blob/main/screenshot%20for%20authentication.png
 
 ---
 
