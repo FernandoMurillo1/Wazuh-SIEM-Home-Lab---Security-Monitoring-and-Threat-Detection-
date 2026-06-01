@@ -13,18 +13,6 @@ VirtualBox/Parallels · Syslog · Windows Event Logs
 
 ## Lab Architecture
 
-The objective of this project was to gain hands-on experience with:
-
-- SIEM deployment
-- Endpoint monitoring
-- Log analysis
-- Threat detection
-- Security alert investigation
-
----
-
-## Lab Architecture
-
 The environment was built using virtual machines to simulate a small enterprise network.
 
 Mac Host
@@ -123,21 +111,6 @@ Wazuh Indexer
 Wazuh Dashboard
 
 Security alerts are generated when events match detection rules.
-
----
-
-## Skills Demonstrated
-
-This project demonstrates hands-on experience with:
-
-- SIEM deployment
-- Endpoint security monitoring
-- Log analysis
-- Security event correlation
-- Threat detection
-- SOC alert investigation
-- Linux system administration
-- Windows event log analysis
 
 ---
 
